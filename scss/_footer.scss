@@ -1,0 +1,35 @@
+footer{
+    background-color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .contenedor {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        padding-top: 50px;
+        .div1{
+            margin-left: 83px;
+        }
+        .div2{
+            text-align: center;
+            p{
+                a{
+                    color: black;
+                    text-decoration: none;
+                }
+            }
+            a:hover{
+                color: #27AE60;
+            }
+        }
+        .div3{
+            margin-left: 100px;
+            justify-content: space-between;
+            img{
+                margin-left: 50px;
+            }
+        }
+    }
+}
