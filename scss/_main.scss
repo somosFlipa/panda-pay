@@ -224,13 +224,19 @@ main{
         margin-right: -20px;
         margin-left: -50px;
         img.hojas{
-            margin-left: 450px;
-            margin-top: -240px;
+            margin-left: 400px;
+            margin-top: -250px;
             margin-right: 0px;
+            position: absolute;
         }
+        .carousel{
+            display: grid;
+            justify-items: center;
+            width: 563px;
+            height: 450px;
+            margin-top: 50px;
+            margin-left: 150px;
         img.foto{
-            margin-top: -200px;
-            margin-left: 300px;
             z-index: 1;
         }
         .fondo{
@@ -240,8 +246,8 @@ main{
             border-radius: 20px;
             position: absolute;
             z-index: 2;
-            margin-left: 340px;
-            margin-top: 80px;
+            margin-left: 140px;
+            margin-top: 240px;
         }
         .tarjeta{
             position: absolute;
@@ -267,7 +273,7 @@ main{
                 grid-template-rows: 1fr;
                 grid-column-gap: 0px;
                 grid-row-gap: 0px;
-                margin-top: 40px;
+                margin-top: 20px;
                 margin-left: 40px;
             }
             .first{
@@ -291,6 +297,7 @@ main{
             }
         }
     }
+}
 }
 }
 section.formulario{

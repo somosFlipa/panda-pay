@@ -284,9 +284,12 @@
     
     }
     @media screen and (min-width:769px)  {
+        section.servicios{
         .carousel{
             display: none;
+        }            
         }
+
         .contenedor-mobile{
             display: none;
         }
