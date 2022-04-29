@@ -56,7 +56,8 @@ nav {
   nav .navbar-toggler {
     max-width: 40px;
     max-height: 40px;
-    z-index: 3; }
+    z-index: 3;
+    position: static; }
   nav .collapse {
     margin-left: 600px; }
 
@@ -244,6 +245,18 @@ main section.testimonios .contenedor {
       height: 450px;
       margin-top: 50px;
       margin-left: 150px; }
+      main section.testimonios .contenedor .div2 .carousel .carousel-control-next {
+        background-color: #fff;
+        z-index: 3;
+        width: 60px;
+        height: 60px;
+        margin-top: 30%;
+        border-radius: 30px;
+        margin-right: 100px;
+        opacity: 100%;
+        box-shadow: 2px 10px 60px rgba(41, 44, 124, 0.1); }
+      main section.testimonios .contenedor .div2 .carousel .carousel-control-prev {
+        display: none; }
       main section.testimonios .contenedor .div2 .carousel img.foto {
         z-index: 1; }
       main section.testimonios .contenedor .div2 .carousel .fondo {
@@ -384,23 +397,41 @@ footer {
         margin-left: 50px; }
 
 @media screen and (max-width: 768px) {
-  nav .logo {
-    margin-left: 20px; }
-  nav .collapse {
+  nav .boton {
+    display: grid;
+    justify-items: end;
+    margin-left: 150px;
+    width: 100%;
+    height: 40px;
+    margin-top: -100px;
+    margin-right: -80px; }
+    nav .boton button {
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-left: 50px; }
+  nav .container-fluid {
+    margin-left: -90px;
+    justify-items: start; }
+  nav .navbar-nav {
+    justify-items: end;
     margin-left: auto;
-    text-align: end; }
+    margin-right: -80px; }
+  nav .collapse {
+    margin-left: 300px;
+    text-align: end;
+    margin-right: 0px; }
+    nav .collapse .show {
+      text-align: end;
+      margin-left: 300px; }
   nav a {
-    display: flex;
+    display: grid;
     justify-items: end;
     font-size: 18px;
     font-weight: 500; }
   nav .navbar-toggler {
-    border-color: #608A06;
-    border: 10px;
-    margin-top: 0px;
-    margin-left: 300px; }
+    border-color: none; }
     nav .navbar-toggler img {
-      margin-left: -6px; }
+      margin-left: -10px; }
   header img.bamboo {
     display: none; }
   header h1 {
@@ -426,122 +457,202 @@ footer {
       color: #fff;
       font-weight: 600;
       text-decoration: none; }
-  main section.payment .pay {
-    margin-top: -300px; }
-  main section.payment .bg {
-    max-width: 300px;
-    max-height: 70px; }
-    main section.payment .bg .texto h2 {
-      font-size: 18px;
-      margin-left: -55px;
-      margin-top: 5px; }
-  main section.payment .clientes {
-    display: none; }
-  main section.servicios .cards {
-    display: none; }
-  main section.servicios .carousel {
-    margin-top: 50px;
-    min-width: 320px;
-    height: 462px;
-    display: grid;
-    justify-items: center;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto; }
-    main section.servicios .carousel img {
-      min-width: 320px; }
-  main .separador {
-    display: none; }
-  main .separador-2 {
-    display: none; }
-  main section.nosotros {
-    margin-top: 150px; }
-    main section.nosotros .contenedor {
+  main {
+    overflow-x: hidden; }
+    main section.payment .pay {
+      margin-top: -300px; }
+    main section.payment .bg {
+      max-width: 300px;
+      max-height: 70px; }
+      main section.payment .bg .texto h2 {
+        font-size: 18px;
+        margin-left: -55px;
+        margin-top: 5px; }
+    main section.payment .clientes {
       display: none; }
-    main section.nosotros .foto {
+    main section.servicios .cards {
+      display: none; }
+    main section.servicios .carousel {
+      margin-top: 50px;
+      min-width: 320px;
+      height: 462px;
       display: grid;
       justify-items: center;
+      justify-content: center;
       margin-left: auto;
       margin-right: auto; }
-      main section.nosotros .foto img {
-        width: 250px;
-        height: 300px; }
-    main section.nosotros .texto {
-      margin-left: 30px;
-      margin-top: 50px;
-      margin-right: 30px; }
-      main section.nosotros .texto span {
-        color: #9EE305;
-        font-family: "Open Sans", sans-serif;
-        font-size: 10px; }
-      main section.nosotros .texto h2 {
-        font-family: "Nunito", sans-serif;
-        font-size: 20px;
-        font-weight: 800; }
-        main section.nosotros .texto h2 span {
-          font-size: 20px;
-          font-family: "Nunito", sans-serif;
-          font-weight: 800; }
-      main section.nosotros .texto .txt {
-        max-width: 513px;
-        height: 224px;
-        font-family: "Poppins", sans-serif;
-        font-size: 15px;
-        font-weight: 400; }
-  main section.testimonios {
-    margin-top: 100px; }
-    main section.testimonios .contenedor {
+      main section.servicios .carousel img {
+        min-width: 320px; }
+    main .separador {
       display: none; }
-    main section.testimonios .contenedor-mobile .texto .contain .first hr {
-      max-width: 80px;
-      margin-top: 20px; }
-    main section.testimonios .contenedor-mobile .texto .contain .second span.up {
-      position: absolute;
-      font-size: 12px;
-      margin-left: 100px;
-      margin-top: -25px; }
-    main section.testimonios .contenedor-mobile .texto .titulo {
-      width: 400px;
-      margin-top: 50px;
-      margin-left: 30px; }
-      main section.testimonios .contenedor-mobile .texto .titulo h2 {
-        font-size: 20px; }
-        main section.testimonios .contenedor-mobile .texto .titulo h2 span {
-          font-size: 20px; }
-    main section.testimonios .contenedor-mobile .texto .txt {
-      font-family: "Poppins", sans-serif;
-      font-size: 15px;
-      font-weight: 400;
-      margin-left: 30px;
-      max-width: 500px;
-      margin-top: 50px;
-      margin-right: 50px; }
-    main section.testimonios .contenedor-mobile .texto button {
-      margin-top: 45px;
-      background-color: #9EE305;
-      border: none;
-      max-width: 278px;
-      height: 60px;
-      margin-left: 30px;
-      border-radius: 5px; }
-      main section.testimonios .contenedor-mobile .texto button a {
-        text-decoration: none;
-        color: #fff;
-        font-weight: 600;
-        font-size: 16px; }
-    main section.testimonios .contenedor-mobile .texto button:hover {
-      background-color: #fff;
-      border: solid 3px #9EE305; }
-      main section.testimonios .contenedor-mobile .texto button:hover a {
-        color: #9EE305; }
-  main section.formulario .contenedor-total .texto {
-    max-width: 300px; }
-  main section.formulario .contenedor-total .form {
-    font-size: 15px; }
-    main section.formulario .contenedor-total .form .row .form-group.col-md-6 input {
-      width: 300px; }
-    main section.formulario .contenedor-total .form textarea {
-      max-width: 300px; }
+    main .separador-2 {
+      display: none; }
+    main section.nosotros {
+      margin-top: 150px; }
+      main section.nosotros .contenedor {
+        display: none; }
+      main section.nosotros .foto {
+        display: grid;
+        justify-items: center;
+        margin-left: auto;
+        margin-right: auto; }
+        main section.nosotros .foto img {
+          width: 250px;
+          height: 300px; }
+      main section.nosotros .texto {
+        margin-left: 30px;
+        margin-top: 50px;
+        margin-right: 30px; }
+        main section.nosotros .texto span {
+          color: #9EE305;
+          font-family: "Open Sans", sans-serif;
+          font-size: 10px; }
+        main section.nosotros .texto h2 {
+          font-family: "Nunito", sans-serif;
+          font-size: 20px;
+          font-weight: 800; }
+          main section.nosotros .texto h2 span {
+            font-size: 20px;
+            font-family: "Nunito", sans-serif;
+            font-weight: 800; }
+        main section.nosotros .texto .txt {
+          max-width: 513px;
+          height: 224px;
+          font-family: "Poppins", sans-serif;
+          font-size: 15px;
+          font-weight: 400; }
+    main section.testimonios {
+      margin-right: 0px;
+      margin-top: 100px; }
+      main section.testimonios .contenedor {
+        display: none; }
+      main section.testimonios .contenedor-mobile {
+        margin-right: 0px;
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+        justify-items: center; }
+        main section.testimonios .contenedor-mobile .texto .contain .first hr {
+          max-width: 80px;
+          margin-top: 20px; }
+        main section.testimonios .contenedor-mobile .texto .contain .second span.up {
+          position: absolute;
+          font-size: 12px;
+          margin-left: 100px;
+          margin-top: -25px; }
+        main section.testimonios .contenedor-mobile .texto .titulo {
+          width: 400px;
+          margin-top: 50px;
+          margin-left: 30px; }
+          main section.testimonios .contenedor-mobile .texto .titulo h2 {
+            font-size: 20px; }
+            main section.testimonios .contenedor-mobile .texto .titulo h2 span {
+              font-size: 20px; }
+        main section.testimonios .contenedor-mobile .texto .txt {
+          font-family: "Poppins", sans-serif;
+          font-size: 15px;
+          font-weight: 400;
+          margin-left: 30px;
+          max-width: 500px;
+          margin-top: 50px;
+          margin-right: 50px; }
+        main section.testimonios .contenedor-mobile .texto button {
+          margin-top: 45px;
+          background-color: #9EE305;
+          border: none;
+          max-width: 278px;
+          height: 60px;
+          margin-left: 30px;
+          border-radius: 5px; }
+          main section.testimonios .contenedor-mobile .texto button a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 600;
+            font-size: 16px; }
+        main section.testimonios .contenedor-mobile .texto button:hover {
+          background-color: #fff;
+          border: solid 3px #9EE305; }
+          main section.testimonios .contenedor-mobile .texto button:hover a {
+            color: #9EE305; }
+        main section.testimonios .contenedor-mobile .div2 .carousel {
+          display: grid;
+          justify-items: center;
+          width: 320px;
+          height: 370.5px;
+          margin-top: 50px;
+          margin-left: 10px; }
+          main section.testimonios .contenedor-mobile .div2 .carousel .carousel-control-next {
+            background-color: #fff;
+            z-index: 3;
+            width: 40px;
+            height: 40px;
+            margin-top: 30%;
+            border-radius: 30px;
+            margin-right: 60px;
+            opacity: 100%;
+            box-shadow: 2px 10px 60px rgba(41, 44, 124, 0.1); }
+        main section.testimonios .contenedor-mobile .div2 img.foto {
+          z-index: 1;
+          width: 75%;
+          height: 75%;
+          box-shadow: 2px 4px 60px rgba(41, 44, 124, 0.1); }
+        main section.testimonios .contenedor-mobile .div2 .fondo {
+          background-color: #27AE60;
+          width: 310px;
+          height: 189px;
+          border-radius: 20px;
+          position: absolute;
+          z-index: 2;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 150px;
+          box-shadow: 2px 4px 60px rgba(41, 44, 124, 0.1); }
+        main section.testimonios .contenedor-mobile .div2 .tarjeta {
+          position: absolute;
+          width: 300px;
+          height: 189px;
+          background: #FFFFFF;
+          box-shadow: 2px 4px 60px rgba(41, 44, 124, 0.1);
+          border-radius: 20px;
+          z-index: 3;
+          margin-left: 10px; }
+          main section.testimonios .contenedor-mobile .div2 .tarjeta p {
+            font-family: "Nunito", sans-serif;
+            font-size: 12px;
+            padding-top: 10px;
+            margin-left: 10px;
+            margin-right: 30px; }
+          main section.testimonios .contenedor-mobile .div2 .tarjeta .parent {
+            display: grid;
+            justify-items: center;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            margin-top: 20px;
+            margin-left: 40px; }
+          main section.testimonios .contenedor-mobile .div2 .tarjeta .first span {
+            margin-left: -95px;
+            font-size: 15px;
+            font-family: "Nunito", sans-serif;
+            font-weight: 600; }
+          main section.testimonios .contenedor-mobile .div2 .tarjeta .second {
+            color: #80819A;
+            font-size: 15px; }
+            main section.testimonios .contenedor-mobile .div2 .tarjeta .second span p {
+              margin-top: -10px;
+              margin-left: 0px;
+              font-size: 15px; }
+    main section.formulario {
+      margin-right: 0px; }
+      main section.formulario .contenedor-total .texto {
+        max-width: 300px; }
+      main section.formulario .contenedor-total .form {
+        font-size: 15px; }
+        main section.formulario .contenedor-total .form .row .form-group.col-md-6 input {
+          width: 300px; }
+        main section.formulario .contenedor-total .form textarea {
+          max-width: 300px; }
   footer .contenedor {
     display: grid;
     grid-template-columns: repeat(1, 1fr);

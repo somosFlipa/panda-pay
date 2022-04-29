@@ -18,10 +18,12 @@ nav {
     max-width: 40px;
     max-height: 40px;
     z-index: 3;
+    position: static;
+
   }
-  .collapse{
-    margin-left: 600px;
-  }
+.collapse{
+  margin-left: 600px;
+}
 
 }
 
