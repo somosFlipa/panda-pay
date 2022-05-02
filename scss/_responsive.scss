@@ -180,6 +180,11 @@
                 margin-left: auto;
                 margin-right: auto;
                 justify-items: center;
+                .txt{
+                    p{
+                        margin-right: 50px;
+                    }
+                }
                 .texto{
                     .contain{
                     .first{
@@ -246,6 +251,8 @@
                 }
             }
             .div2{
+                display: grid;
+                margin-right: auto;
                 .carousel{
                     display: grid;
                     justify-items: center;
@@ -264,7 +271,9 @@
                         opacity: 100%;
                         box-shadow: 2px 10px 60px rgba(41, 44, 124, 0.1);
                     }
-
+                    .carousel-inner{
+                        overflow: inherit;
+                    }
                 }
                 img.foto{
                     z-index: 1;
