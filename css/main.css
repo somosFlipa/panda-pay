@@ -259,6 +259,10 @@ main section.testimonios .contenedor {
         display: none; }
       main section.testimonios .contenedor .div2 .carousel img.foto {
         z-index: 1; }
+      main section.testimonios .contenedor .div2 .carousel .daniela {
+        width: 422.67px;
+        height: 317px;
+        border-radius: 25px; }
       main section.testimonios .contenedor .div2 .carousel .fondo {
         background-color: #27AE60;
         width: 418px;
@@ -601,6 +605,8 @@ footer {
             width: 75%;
             height: 75%;
             box-shadow: 2px 4px 60px rgba(41, 44, 124, 0.1); }
+          main section.testimonios .contenedor-mobile .div2 .daniela {
+            border-radius: 25px; }
           main section.testimonios .contenedor-mobile .div2 .fondo {
             background-color: #27AE60;
             width: 310px;
@@ -636,6 +642,8 @@ footer {
               grid-row-gap: 0px;
               margin-top: 20px;
               margin-left: 40px; }
+            main section.testimonios .contenedor-mobile .div2 .tarjeta .daniela-end {
+              margin-top: -15px; }
             main section.testimonios .contenedor-mobile .div2 .tarjeta .first span {
               margin-left: -95px;
               font-size: 15px;
